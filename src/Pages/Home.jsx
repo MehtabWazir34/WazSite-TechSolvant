@@ -65,7 +65,7 @@ function Home() {
       </motion.div>
 
       {/* Services Preview */}
-      <div className="mb-12 border-b border-gray-700 pb-4 min-h-[94vh]">
+      <motion.div className="mb-12 border-b border-gray-700 pb-4 min-h-[94vh]">
         <h2 className="text-3xl font-bold mb-4">Our Services</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {previewServices.map(s => (
@@ -83,10 +83,10 @@ function Home() {
             </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Team Preview */}
-      <div className="border-b border-gray-700 pb-4 min-h-[94vh] mb-12">
+      <motion.div className="border-b border-gray-700 pb-4 min-h-[94vh] mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Team</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {previewTeam.map(m => (
@@ -104,9 +104,9 @@ function Home() {
             </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
       
-        <div className="py-12 px-6 max-w-5xl mx-auto">
+    <motion.div className="py-12 px-6 max-w-5xl mx-auto min-h-[54vh]">
       <h2 className="text-3xl font-bold text-center mb-8" >
         What Our Clients Say
       </h2>
@@ -131,7 +131,7 @@ function Home() {
             </button>
           </Link>
         </div>
-    </div>
+    </motion.div>
 
       <RequestForm title = "Sent Request"/>
     </motion.section>

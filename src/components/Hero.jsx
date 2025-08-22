@@ -5,7 +5,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
     >
       {/* Background Video */}
-      <iframe
+      <iframe 
     src="https://www.youtube.com/embed/sQ22pm-xvrE?autoplay=1&mute=1&loop=1&playlist=sQ22pm-xvrE "
     title="Hero Video"
     // frameBorder="0"
@@ -16,10 +16,10 @@ export default function Hero() {
 
 
       {/* Dark Overlay (for readability) */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/40 hidden md:block"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 px-4 animate-fadeIn">
+      <div className="relative px-4 animate-fadeIn">
         <h4 className="text-lg">Welcome to the</h4>
         <h1 className="text-4xl md:text-6xl font-bold my-4">WazSite-TechSolvant</h1>
         <p className="text-gray-300">An All-In-One solution to your digital problems.</p>

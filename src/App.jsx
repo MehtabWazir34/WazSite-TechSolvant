@@ -7,6 +7,8 @@ import Services from "./pages/Services";
 import OurTeam from "./pages/OurTeam";
 import RequestForm from "./pages/RequestForm";
 import Reviews from "./components/Reviews";
+import ChangeMode from "./components/ChangeMode";
+
 
 // import Hero from "./components/Hero";
 
@@ -26,7 +28,9 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/request" element={<RequestForm />} />
           </Routes>
+          <ChangeMode/>
         </main>
+        
         <Footer />
       </div>
     </Router>

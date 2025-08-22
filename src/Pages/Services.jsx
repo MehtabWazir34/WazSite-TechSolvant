@@ -47,6 +47,15 @@ const allServices = [
     tools: ["AWS, ", "Google Cloud, ", "Microsoft Azure, ", "Docker."],
     features: ["Cloud Hosting, ", "Serverless Apps, ", "Data Backup, ", "Infrastructure Management."],
     details: "We help businesses scale with reliable and secure cloud solutions, reducing costs and improving efficiency."
+  },
+  { 
+    id: 6, 
+    type: "Video Editing", 
+    info: "Scale up brands with video.", 
+    card: "/Images/Video editing.jpg",
+    tools: ["CapCut, ", "Adobe Premier Pro, ", "WonderShare. "],
+    features: ["Brands, ", "Ads, ", "Vlog, ", " short and long videos."],
+    details: "We help businesses and brands to scale and turn raw footages into scroll-stopping, highly-engagging videos."
   }
 ];
 
