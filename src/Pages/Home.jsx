@@ -6,7 +6,7 @@ import Us from "../components/Us";
 import RequestForm from "../components/RequestForm";
 import Reviews from "../components/Reviews";
 
-import MyImge from '../assets/Me.png'
+import MyImge from '../assets/Me.jpg'
 
 const previewServices = [
   { id: 1, type: "Graphics Designs", info: "Quality designs.", card: "/Images/graphics.jpg" },
