@@ -14,7 +14,7 @@ const previewServices = [
 
 const previewTeam = [
   { id: 1, title: "SaifUllah Khan", cate: "Software Engineer", pic: "https://media.licdn.com/dms/image/v2/D4D03AQHote-snDKK0g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730812444229?e=1758758400&v=beta&t=JmeAPPLnK8fjAHw1fE_lzdOIFz1-4tQRtnY8DupTHvk" },
-  { id: 2, title: "Mehtab Wazir", cate: "Front-end Developer", pic: "Me.jpg" },
+  { id: 2, title: "Mehtab Wazir", cate: "Front-end Developer", pic: "import.meta.env.Me.jpg" },
   { id: 3, title: "Nehal Anees", cate: "On-Page SEO Specialist", pic: "https://media.licdn.com/dms/image/v2/D4D03AQFWhNIhJP21zQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731560468456?e=1758758400&v=beta&t=qnExAn1tEvmDa8upnnEcRr5hZTPR1XvkFv-9qHq5rKU" }
 ];
 

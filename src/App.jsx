@@ -15,10 +15,10 @@ import ChangeMode from "./components/ChangeMode";
 function App() {
   return (
     <HashRouter>
-      {/* remove hard-coded bg & text colors, use light + dark */}
+
       <div className="min-h-screen flex flex-col bg-white text-gray-900 dark:bg-[#0d1117] dark:text-[#E6edf3] transition-colors duration-300">
         <Header />
-        {/* <Hero/> */}
+ 
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

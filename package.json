@@ -1,16 +1,16 @@
 {
-  "name": "profile-api",
+  "name": "wazsite-techsolvant",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mehtabwazir34.github.io/WazSite-TechSolvant/",
+  "homepage": "https://MehtabWazir34.github.io/WazSite-TechSolvant/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
