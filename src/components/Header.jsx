@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import menuIcon from "../assets/menu Bar.jpg";
+import logo from "../assets/logo.png"
 
 function Header() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-gray-100 shadow-md dark:bg-gray-900 transition-colors duration-300">
-      <img src="logo.png" alt="logo" className="w-20 h-14 rounded-lg" />
+      <img src={logo} alt="logo" className="w-20 h-14 rounded-lg" />
 
       {/* Navbar with animation */}
       <AnimatePresence>
@@ -60,7 +62,7 @@ function Header() {
         {/* Menu Icon */}
         <div className="rounded-full md:hidden">
           <img
-            src="/Images/menu Bar.jpg"
+            src={menuIcon}
             alt="menu icon"
             className="rounded-full cursor-pointer w-[60px] h-[60px] outline-none"
             onClick={() => {

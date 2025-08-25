@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import RequestForm from "../components/RequestForm";
 import Aos from "aos";
+import graphicsCard from "../assets/graphics.jpg";
+import VideoCard from "../assets/Video editing.jpg"
 
 const allServices = [
   { 
     id: 1, 
     type: "Graphics Designs", 
     info: "Quality graphic work.", 
-    card: "/Images/graphics.jpg",
+    card: graphicsCard,
     tools: ["Adobe Photoshop, ", "Illustrator, ", "Figma, ", "Canva."],
     features: ["Logo Design, ", "Brand Identity, ", "Social Media Graphics,", "UI Mockups."],
     details: "We provide creative and visually appealing graphic design solutions that elevate your brand identity and capture audience attention."
@@ -52,7 +54,7 @@ const allServices = [
     id: 6, 
     type: "Video Editing", 
     info: "Scale up brands with video.", 
-    card: "/Images/Video editing.jpg",
+    card: VideoCard,
     tools: ["CapCut, ", "Adobe Premier Pro, ", "WonderShare. "],
     features: ["Brands, ", "Ads, ", "Vlog, ", " short and long videos."],
     details: "We help businesses and brands to scale and turn raw footages into scroll-stopping, highly-engagging videos."
