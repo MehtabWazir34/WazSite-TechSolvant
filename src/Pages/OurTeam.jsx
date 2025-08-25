@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import RequestForm from "../components/RequestForm";
+import MyImg from "../assets/Me.jpg"
 
 const allTeam = [
 
@@ -28,7 +29,7 @@ const allTeam = [
     id: 3, 
     title: "Mehtab Wazir", 
     cate: "Front-end Developer", 
-    pic: "Me.jpg",
+    pic: MyImg,
     experience: "2+ years",
     expertise: ["React.js, ", "Tailwind CSS, ", "JavaScript, ", "UI Animations."],
     bio: "Mehtab specializes in building modern, responsive, and highly interactive web interfaces with a focus on user experience.",

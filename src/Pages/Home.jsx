@@ -7,19 +7,19 @@ import RequestForm from "../components/RequestForm";
 import Reviews from "../components/Reviews";
 import myImg from "../assets/Me.jpg";
 
-
-const previewServices = [
-  { id: 1, type: "Graphics Designs", info: "Quality designs.", card: "/Images/graphics.jpg" },
-  { id: 2, type: "Web Development", info: "Modern responsive websites.", card: "https://img.freepik.com/premium-psd/web-development-3d-illustration_609002-519.jpg" },
-  { id: 3, type: "SEO Marketing", info: "Boost your online presence.", card: "https://th.bing.com/th/id/R.f61084688b00967a44dee60b1d98d61a?rik=DO9P2mDL%2bIt6Vg&pid=ImgRaw&r=0&sres=1&sresct=1" }
-];
-
 const previewTeam = [
   { id: 1, title: "SaifUllah Khan", cate: "Software Engineer", pic: "https://media.licdn.com/dms/image/v2/D4D03AQHote-snDKK0g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730812444229?e=1758758400&v=beta&t=JmeAPPLnK8fjAHw1fE_lzdOIFz1-4tQRtnY8DupTHvk" },
   { id: 2, title: "Mehtab Wazir", cate: "Front-end Developer", pic: myImg },
   
   { id: 3, title: "Nehal Anees", cate: "On-Page SEO Specialist", pic: "https://media.licdn.com/dms/image/v2/D4D03AQFWhNIhJP21zQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731560468456?e=1758758400&v=beta&t=qnExAn1tEvmDa8upnnEcRr5hZTPR1XvkFv-9qHq5rKU" }
 ];
+const previewServices = [
+  { id: 1, type: "Graphics Designs", info: "Quality designs.", card: "/Images/graphics.jpg" },
+  { id: 2, type: "Web Development", info: "Modern responsive websites.", card: "https://img.freepik.com/premium-psd/web-development-3d-illustration_609002-519.jpg" },
+  { id: 3, type: "SEO Marketing", info: "Boost your online presence.", card: "https://th.bing.com/th/id/R.f61084688b00967a44dee60b1d98d61a?rik=DO9P2mDL%2bIt6Vg&pid=ImgRaw&r=0&sres=1&sresct=1" }
+];
+
+
 
   const reviews = [
     {
