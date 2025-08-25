@@ -1,3 +1,5 @@
+import React from "react";
+import { HashRouter, Router, Routes } from "react-router-dom";
 function Footer() {
   return (
     <footer className="px-6 py-4 text-center 
