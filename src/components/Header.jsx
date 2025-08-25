@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import menuIcon from "../assets/menu Bar.jpg";
 import logo from "../assets/logo.png"
@@ -11,7 +11,7 @@ function Header() {
     <header className="flex justify-between items-center px-6 py-4 bg-gray-100 shadow-md dark:bg-gray-900 transition-colors duration-300">
       <img src={logo} alt="logo" className="w-20 h-14 rounded-lg" />
 
-      {/* Navbar with animation */}
+      {/* Small Screens Menu */}
       <AnimatePresence>
         {open && (
           <motion.nav
@@ -24,33 +24,145 @@ function Header() {
             <ul
             onClick={()=> setOpen(false)}
              className=" flex flex-col pl-4 md:flex-row gap-6 font-semibold text-gray-900 dark:text-gray-200">
-              <li className="active:text-amber-400"><Link to="/" >Home</Link></li>
-              <li><Link to="/us" >Us</Link></li>
-              <li><Link to="/services" >Services</Link></li>
-              <li><Link to="/team" >Our Team</Link></li>
-              <li><Link to="/reviews" >Reviews</Link></li>
-            </ul>
-          </motion.nav>
+
+    
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/us"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Services
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/team"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Our Team
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/reviews"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Reviews
+          </NavLink>
+        </li>
+      </ul>
+    </motion.nav>
+         
         )}
       </AnimatePresence>
 
 {/* Large Screen Menu */}
-      <motion.nav
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="hidden flex md:block  w-full bg-gray-100 dark:bg-gray-900 p-6"
+          <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+      className="hidden md:block w-full bg-gray-100 dark:bg-gray-900 p-6"
+    >
+      <ul className="pl-4 flex gap-6 font-semibold text-gray-900 dark:text-gray-200">
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
           >
-            <ul
-             className=" pl-4 flex gap-6 font-semibold text-gray-900 dark:text-gray-200">
-              <li className="active:text-amber-400"><Link to="/" >Home</Link></li>
-              <li><Link to="/us" >Us</Link></li>
-              <li><Link to="/services" >Services</Link></li>
-              <li><Link to="/team" >Our Team</Link></li>
-              <li><Link to="/reviews" >Reviews</Link></li>
-            </ul>
-          </motion.nav>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/us"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Us
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Services
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/team"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Our Team
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/reviews"
+            className={({ isActive }) =>
+              isActive
+                ? "text-amber-500 border-b-2 border-amber-400 font-bold"
+                : "hover:text-amber-400"
+            }
+          >
+            Reviews
+          </NavLink>
+        </li>
+      </ul>
+    </motion.nav>
 
       <div className="flex items-center gap-4 ">
         <Link to="/request">
